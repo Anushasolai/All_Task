@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+   text-align: center;
+   background-color:brown;
+   color: white;
+}
+body{
+    background-color:black;
+}
+.container{
+    display: flex;
+    
+}
+.box{
+    margin: 50px;
+    padding: 50px;
+    border: 15px solid red;
+    background-color: blue;
+    color: white;
+}

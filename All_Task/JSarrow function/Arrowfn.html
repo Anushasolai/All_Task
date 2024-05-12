@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Arrow Function in JS</h2>
+<h3>What are arrow functions in JavaScript? How do you define an arrow function using the arrow function</h3>
+<p>An arrow function is a concise way to write functions in JavaScript.They are particularly useful for short, inline functions and for preserving the lexical context of this. </p>
+
+<button id="myButton" >Arrow</button>
+
+
+<script>
+    //Basic ArrowFunction
+    const sub = (a, b) => {
+    return a - b;
+};
+console.log("Basic ArrowFunction:")
+console.log(sub(5,3));
+
+    //Arrow Function as Anonymous Function
+const printMsg = () => {
+    console.log("Arrow Function as Anonymous Function:")
+    console.log("Hii, Team!");
+};
+
+printMsg(); 
+   
+    //Arrow Function as Callback
+const numbers = [1, 2, 3];
+const squared = numbers.map(num => num * num);
+console.log("Arrow Function as Callback:")
+console.log(squared); 
+  
+    //Arrow Function with Implicit Return
+const double = x => x * 2;
+console.log("Arrow Function with Implicit Return::")
+console.log(double(3));
+
+   //Arrow Function with Object Literal
+const createPer = (name, age) => ({ name, age });
+const per = createPer("Anu", 21);
+console.log("Arrow Function with Object Literal:")
+console.log(per);
+
+  //Arrow Function with EventListener
+  
+  document.getElementById("myButton").addEventListener("click", () => {
+    console.log("Button clicked!");
+});
+</script>
+</body>
+</html>
+
+    
+
+
+
+
+  
+
+   
+   
+
+
+   
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        const waiting = ms => new Promise(resolve => setTimeout(resolve, ms));
+        async function tW() {
+            console.log("Starting wait test:");
+            console.log("Waiting for 1000 ms...");
+            await waiting(1000);
+            console.log("Finished waiting for 3000 ms.");
+            console.log("Waiting for 2000 ms...");
+            await waiting(2000);
+            console.log("Finished waiting for 2000 ms.");
+            console.log("Waiting for 3000 ms...");
+            await waiting(3000);
+            console.log("Finished waiting for 3000 ms.");
+        }
+        tW();
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Objects in JS</h2>
+<h3>How would you define and initialize an objects in JS and Compare them</h3>
+<p>In Js,objects are one of the fundamental datatypes,allowing you to store collections of Key-value pairs.you can define and initialize objects using object literals,constructor functions</p>
+
+<script>
+    
+    //constructor function
+function Person(name, age, city) {
+    this.name = name;
+    this.age = age;
+    this.city = city;
+    
+}
+const per1 = new Person("Anu", 21, "Trichy");
+const per2 = new Person("sakthi", 33, "kochin");
+const per3 = new Person("Maha", 25, "Madurai");
+const per4 = new Person("Anu", 21, "Trichy");
+console.log("constructor function:")
+console.log(per1.name)
+console.log(per2.age)
+  
+    //Compare the objects
+function compareObj(obj1, obj2) {
+   
+    const keys1 = Object.keys(obj1);
+    const keys2 = Object.keys(obj2);
+    if (keys1.length !== keys2.length) {
+        return false;
+    }
+
+    for (let key of keys1) {
+        if (obj1[key] !== obj2[key]) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+
+console.log("Compare the objects:")
+console.log(compareObj(per1, per2)); 
+console.log(compareObj(per1, per4)); 
+
+</script>
+
+</body>
+</html>
